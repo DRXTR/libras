@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            gap: 10px;
+        }
+
+        header{
+            background-color: black;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        
+        }
+
+        header .p {
+            color: rgb(0, 0, 0);
+            position: relative;
+            left: 50px;
+            height: 25px;
+            width: 90px;
+            background-color: rgb(255, 255, 255);
+            border: 0;
+        }
+
+        .p:hover {
+            transform: scale(1.1);
+        }
+
+        .content{
+            display: flex;
+            gap: 10px;
+        }
+
+        .s1 {
+        background-color: rgb(225, 228, 228);
+        width: 65%;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        display: flex;
+        flex-direction: column; /* Adicionado para alinhar os cards verticalmente */
+        align-items: center; /* Adicionado para centralizar os cards horizontalmente */
+        }
+
+
+        .s2{
+            background-color: rgb(225, 228, 228);
+            height: 100vh;
+            width: 33%;
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+
+        .card {
+        background-color: rgb(232, 235, 235);
+        position: relative;
+        height: 240px; /* Ajuste esta altura para caber o conteúdo do card */
+        width: 200px; /* Ajuste esta largura para caber o conteúdo do card */
+        overflow: hidden; /* Garante que a imagem não ultrapasse o container */
+        margin-top: 20px; /* Espaçamento entre os cards */
+        border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%; /* Make the image fill the width of the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Prevents any unwanted spacing */
+        }
+
+        .card:hover {
+            transform: scale(1.06);
+        }
+
+        .cards{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!--Inicio do corpo da página -->
+    <header>
+        <button class="p"> Olá</button>
+    </header>
+
+    <main class="content">
+        <div class="s1">
+            <h1>Alguma Coisa </h1>
+    
+        <div class="cards">
+            <div class="card">
+                <img src="https://www.imasul.ms.gov.br/wp-content/uploads/2021/05/12716076_747200068749593_1723979578211911771_o.jpg" alt="rio">
+            </div>
+    
+            <div class="card">
+                <img src="https://www.imasul.ms.gov.br/wp-content/uploads/2021/05/12716076_747200068749593_1723979578211911771_o.jpg" alt="rio">
+            </div>
+    
+            <div class="card">
+                <img src="https://www.imasul.ms.gov.br/wp-content/uploads/2021/05/12716076_747200068749593_1723979578211911771_o.jpg" alt="rio">
+            </div>
+    
+            <div class="card">
+                <img src="https://www.imasul.ms.gov.br/wp-content/uploads/2021/05/12716076_747200068749593_1723979578211911771_o.jpg" alt="rio">
+            </div>
+    
+            <div class="card">
+                <img src="https://www.imasul.ms.gov.br/wp-content/uploads/2021/05/12716076_747200068749593_1723979578211911771_o.jpg" alt="rio">
+            </div>
+        </div>
+    </div>  
+    
+        <div class="s2">
+    
+        </div>
+    </main>
+    <footer>
+    <p>1</p>        
+    </footer>
+
+    <!-- Código do VLibras -->
+<!-- Início do código relacionado ao plugin VLibras -->
+<div vw class="enabled">
+    <!-- Esta div possui o atributo customizado 'vw' e a classe 'enabled', que  são usados pelo plugin VLibras para identificar e estilizar o contêiner principal do widget. -->
+   
+    <div vw-access-button class="active"></div>
+    <!-- Esta div representa o botão de acesso ao VLibras. Tem um atributo customizado 'vw-access-button' e a classe 'active', indicando que o botão está ativo e visível. -->
+   
+    <div vw-plugin-wrapper>
+        <!-- Esta div atua como um contêiner para o plugin VLibras. O atributo 'vw-plugin-wrapper' provavelmente é utilizado para o plugin identificar onde deve ser inserido seu conteúdo. -->
+       
+        <div class="vw-plugin-top-wrapper"></div>
+        <!-- Esta div interna pode ser utilizada para posicionar elementos ou funcionalidades adicionais do plugin VLibras na parte superior do widget. -->
+    </div>
+</div>
+ 
+<!-- Inclusão do script do plugin VLibras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<!-- Este script carrega o arquivo JavaScript do plugin VLibras diretamente do servidor do VLibras. -->
+ 
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    <!-- Este script inicializa o widget VLibras. A função 'VLibras.Widget' é chamada com a URL base do app VLibras, configurando o widget no site. -->
+</script>
+
+</body><!--Fim do corpo da página -->
+</html>
